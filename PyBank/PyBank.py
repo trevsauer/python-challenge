@@ -69,5 +69,8 @@ with open(budget_data_path) as csvfile:
     #prints the date associated with the min value in list of revenue changes along with its respective revenue change value
     print("Greatest Decrease in Revenue:", min_revenue_change_date,"($", min_revenue_change,")")
 
-    with open(PyBank.py,"w") as text_file:
-        text_file.write("Saving to text file")
+    output_file = os.path.join('Financial_analysis.txt')
+    with open(output_file,"w") as txt_file:
+        output_file.write("Saving to text file")
+
+    
